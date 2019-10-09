@@ -13,3 +13,6 @@ def my_function(set2):
 
 
 my_function(set2)
+
+# Надо удалить
+print("Hello")
