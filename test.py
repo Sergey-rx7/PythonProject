@@ -1,18 +1,17 @@
-set1 = set(['1', '2', '3'])
-set2 = (['1', '3', '4'])
+class textToList:
+    entryText: str
+
+    def show_info(self):
+        print(f"List1: {self.entryText}, List2: {self.textSplit}")
+
+    def __init__(self, newEntryText):
+        self.entryText = newEntryText
+
+    def textSplit(self):
+        return self.entryText.split()
 
 
-# sel = (['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'])
-# sel = '1 2 3 4 5 6 7 8 9 10'
-
-
-def my_function(set2):
-    if len(set1.intersection(set2)) > 0:
-        # return "YES"
-        print("YES")
-
-
-my_function(set2)
-
-# Надо удалить
-print("Hello")
+# entryText = str("Some, text for function")
+textList = textToList("asd")
+print(textList.textSplit())
+# print(textList.textSplit(entryText))
